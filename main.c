@@ -1,9 +1,9 @@
 #include <stdio.h>
 #define n 5
-void bul(int a[n][n]);
+void bul(int a[n][n]);// З назви функцій незрозуміло, що вони робитимуть
 int f(int a[n][n], int x);
 int main(void) {
-    int i,j,k;
+    int i,j,k;//змінна k не використовується в тілі main, але пізніше оголошується ще раз
     static int a[n][n];
     for (i = 0; i < n; i++){
 
@@ -60,7 +60,7 @@ void bul(int a[ ][n]) {     int i, k, j, c;
     }
 
 }
-
+//функція f не повертає ніяких значень
 int f(int a[n][n], int x) {
     int r = 1;
     for (int i = x + 1; i < 5; i++)
